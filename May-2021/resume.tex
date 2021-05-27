@@ -1,0 +1,215 @@
+%-------------------------
+% Resume in Latex
+% Author : Sayan Nath
+% Based off of: https://github.com/sayannath/Resume-LaTex
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+\usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Sayan Nath} \\ \vspace{1pt}
+    \small +91 9874948947 $|$ \href{mailto:sayannath235@gmail.com}{\underline{sayannath235@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/sayannath235/}{\underline{linkedin.com/in/sayannath235}} $|$
+    \href{https://github.com/sayannath}{\underline{github.com/sayannath}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Kalinga Institute of Industrial Technology}{Bhubaneswar, India}
+      {Bachelor of Technology in Information Technology, CGPA-9.02/10}{July. 2019 -- Present}
+    % \resumeSubheading
+    %   {Blinn College}{Bryan, TX}
+    %   {Associate's in Liberal Arts}{Aug. 2014 -- May 2018}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Google Summer of Code 2021, Student}{May 2021 -- Present}
+      {TensorFlow}{Remote}
+      \resumeItemListStart
+        \resumeItem{Update the existing \href{https://github.com/tensorflow/examples/tree/master/lite/examples/bert_qa}{\textbf{BERT QnA}}, \href{https://github.com/tensorflow/examples/tree/master/lite/examples/text_classification}{\textbf{Text Classification}} and \href{https://github.com/tensorflow/examples/tree/master/lite/examples/smart_reply/android}{\textbf{Smart Reply}} examples in Android (Java) and iOS (Swift)}
+        \resumeItem{Build and test the example in \textbf{Android (Java)} and \textbf{iOS (Swift)}. \textbf{Modify} this example to use the \href{https://www.tensorflow.org/lite/inference_with_metadata/task_library/overview}{\textbf{TFLite Task Library}} instead.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Data Science Intern}{April 2021 -- Present}
+      {Juppiter AI Labs}{Pune, IND}
+      \resumeItemListStart
+        \resumeItem{Worked with \textbf{OCR model} for converting Image to Text with \textbf{Keras}. Used that OCR model in \textbf{Flutter App}}
+        \resumeItem{Created the backend in \textbf{NodeJs}, \textbf{Express}, \textbf{Redis}, \textbf{Socket.io}, and and maintained \textbf{AWS server} with \textbf{EC2} and \textbf{S3} instances.}
+        \resumeItem{Scaled complete backend with \textbf{horizontal scaling} to increase efficiency by \textbf{70\%}}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Machine Learning Engineer}{Feb. 2021 -- Present}
+      {Codebugged AI}{Delhi, IND}
+      \resumeItemListStart
+        \resumeItem{\textbf{Played} a major role for developing \textbf{Ikshana AI}. Worked with \textbf{TensorFlow Object Detection API} to \textbf{Computer-Vision} Models and used \textbf{TensorFlow JS} and \textbf{ReactJS} to deploy them in Web.}
+        \resumeItem{Identified \textbf{Software} \& \textbf{DB architecture} based on project \textbf{requirements}, performing version control \&, refining product.}
+        \resumeItem{Made many \textbf{Computer-Vision} models as per customer requirements. \textbf{Optimised} the models with various optimisation techniques like \textbf{Quantisation}, \textbf{Pruning} and \textbf{TensorRT}.}
+        \resumeItem{Worked with \textbf{TF-Lite} to make inference in edge devices like Android and iOS Apps.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Sanus \- A CADx Platform } $|$ \emph{TensorFlow, Flask, MERN, Flutter \& Docker} $|$ \href{https://github.com/SANUS-ML/SANUS-WEB}{GitHub}}{January 2021 -- Present}
+          \resumeItemListStart
+            \resumeItem{\textbf{Developed} a full-stack web application using with \textbf{Flask} and \textbf{NodeJs} serving a \textbf{REST API} with \textbf{ReactJS} as the frontend and \textbf{Flutter} as mobile application.}
+            \resumeItem{The application can \textbf{detect diseases} with \textbf{one click} by upload the patient \textbf{electronic healthcare records} and \textbf{provide information} of various anomalies.}
+            \resumeItem{In our platform, we are tackling \textbf{five major diseases} for now. We have deployed \textbf{light weighted} \textbf{Machine Learning} and \textbf{Deep Learning Models}.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{MIRNet-Flutter} $|$ \emph{Flutter, TF-Lite \& Git} $|$ \href{https://github.com/sayannath/MIRNet-Flutter}{GitHub}}{May 2018 -- May 2020}
+          \resumeItemListStart
+            \resumeItem{It is used to enhance a \textbf{low-light image} to a \textbf{bright image}.}
+            \resumeItem{This project got a mention in \textbf{Google I/O 2021} as a notable \textbf{Open Source Project}. It is also enlisted in the \textbf{ML-GDE}'s \href{https://github.com/ml-gde/e2e-tflite-tutorials}{\textbf{E2E TFLite Tutorials}} repository.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{American-Sign-Language-Detection} $|$ \emph{Android,TensorFlow TF-Lite \& Git} $|$ \href{https://github.com/sayannath/American-Sign-Language-Detection}{GitHub}}{Feb. 2021 -- April 2021}
+          \resumeItemListStart
+            \resumeItem{It is a \textbf{deep learning} based app where we can detect \textbf{American Sign Language}}
+            \resumeItem{Used \textbf{MobileNetV2 architecture} to train the images. It handles up to \textbf{29 classes}.}
+            \resumeItem{Used \textbf{Quantization Aware Training} to \textbf{optimise} the model and exported it to \textbf{TF-Lite} for deploying it in android app.}
+            \resumeItem{The \textbf{average inference time} is \textbf{172ms}}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%
+%-----------PUBLICATIONS-----------
+\section{Publications}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Rahat - A Disaster Management App}{}
+      {In Project Innovations in Distributed Computing and Internet Technology, 17th ICDCIT}{}
+      \resumeItemListStart
+      \resumeItem{\href{https://drive.google.com/file/d/16IL_54gRIlrMemAvtV0bdY24hkztj0pV/view}{Link}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+% \section{Technical Skills}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%      \textbf{Languages}{: Java, Python, JavaScript, Dart} \\
+%      \textbf{Frameworks}{: TensorFlow, Keras, NodeJS, Flask, Flutter} \\
+%      \textbf{Databases}{: MongoDB, PostgreSQL, MySQL, Redis} \\
+%      \textbf{Developer Tools}{: Git, Docker, Linux, Digital-Ocean, Google Cloud Platform, AWS}
+%     }}
+%  \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
+
